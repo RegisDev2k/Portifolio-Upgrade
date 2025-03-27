@@ -1197,7 +1197,7 @@ footer {
   outline: none;
 }
 
-.light-theme .download-btn{
+.light-theme .download-btn {
   color: var(--dark-bg);
 }
 
@@ -1251,7 +1251,7 @@ footer {
 }
 
 .download-btn.download-success {
-  background: linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   color: white;
 }
 
@@ -1261,9 +1261,17 @@ footer {
 }
 
 @keyframes pulse {
-  0% { transform: translate(-50%, -50%) scale(1); }
-  50% { transform: translate(-50%, -50%) scale(1.2); }
-  100% { transform: translate(-50%, -50%) scale(1); }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .download-btn.downloading .download-icon {

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const typingElement = document.querySelector('.typing');
   
   // Variables
-  const typingTexts = ['Frontend', 'Backend', 'Full Stack', 'Mobile'];
+  const typingTexts = ['Frontend', 'web', 'Full Stack'];
   let typingIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

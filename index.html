@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Design Futurista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <header>
+        <div class="container">
+            <div class="logo">REGINALDO<span>DEV</span></div>
+            <div class="theme-switch">
+                <div class="switch-track">
+                    <div class="switch-thumb">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Olá, eu sou <span class="highlight">Reginaldo Nunes</span></h1>
+                <h2 class="typewriter">Desenvolvedor <span class="typing"></span></h2>
+                <p>Transformando ideias em experiências digitais</p>
+                <div class="cta-buttons">
+                    <a href="#projetos" class="btn primary">Meus Projetos</a>
+                    <a href="#contato" class="btn secondary">Fale Comigo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="glow"></div>
+                        <img src="./img/profile.png" alt="Reginaldo Nunes" class="profile-image">
+                    </div>
+
+                    <div class="download-container">
+                        <button id="downloadBtn" class="download-btn">
+                            <span class="btn-text">
+                                <i class="fas fa-download"></i>
+                                <span>Download - CV</span>
+                            </span>
+                            <span class="download-icon">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                            <div class="download-progress"></div>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="about-text">
+                    <p>Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras e acessíveis, combinando
+                        design e funcionalidade.</p>
+                    <div class="skills">
+                        <h3>Habilidades</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <span>HTML/CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>React</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="40"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>UI/UX Design</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-value="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./img/Clima.png" alt="Projeto Web 1">
+                        <div class="overlay">
+                            <div class="project-links">
+                                <a href="https://regisdev2k.github.io/DevReginaldo-ClimaTempo/" class="project-link"><i
+                                        class="fas fa-link"></i></a>
+                                <a href="https://github.com/RegisDev2k/DevReginaldo-ClimaTempo" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ClimaTempo - Previsão do Tempo na Palma da Mão</h3>
+                        <p>Veja a previsão do tempo em tempo real de forma simples e rápida, com dados atualizados e
+                            design intuitivo.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="./img/Financeiro.png" alt="Aplicativo Mobile">
+                        <div class="overlay">
+                            <div class="project-links">
+                                <a href="https://regisdev2k.github.io/Controle-financeiro/" class="project-link"><i
+                                        class="fas fa-link"></i></a>
+                                <a href="https://github.com/RegisDev2k/Controle-financeiro" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Controle Financeiro – Gerencie Suas Finanças Pessoais</h3>
+                        <p>Controle suas receitas e despesas de forma prática e organizada, com gráficos e relatórios
+                            para uma gestão financeira eficiente.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>Tailwind CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="./img/Todolist.png" alt="Design UI/UX">
+                        <div class="overlay">
+                            <div class="project-links">
+                                <a href="https://regisdev2k.github.io/DevReginaldo-TodoList/" class="project-link"><i
+                                        class="fas fa-link"></i></a>
+                                <a href="https://github.com/RegisDev2k/DevReginaldo-TodoList" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TodoList - Organize Suas Tarefas com Facilidade</h3>
+                        <p>TodoList - Organize Suas Tarefas com Facilidade</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Dev.reginaldonunes@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>+55 (85) 92149-8527</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Fortaleza-CE, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/reginaldo-nunes-03113b285/" class="social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/RegisDev2k" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/regiis_n/" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome</label>
+                            <div class="line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <div class="line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Assunto</label>
+                            <div class="line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Mensagem</label>
+                            <div class="line"></div>
+                        </div>
+                        <button type="submit" class="btn primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">REGINALDO<span>DEV</span></div>
+                <p>&copy; 2025 Reginaldo Nunes - Todos os direitos reservados</p>
+            </div>
+            <a href="#inicio" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
